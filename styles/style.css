@@ -1,0 +1,77 @@
+:root {
+    --color-primary: #FF42A5;
+    --color-secondary: #0B0223;
+    --color-text: #534C64;
+    --color-nav-text: #3C354F;
+}
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav-bar style starts */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-leftside{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+.nav-leftside>h3{
+    color: var(--color-secondary);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.nav-title-first-letter{
+    color: var(--color-primary);
+}
+.nav-rightside{
+    color: var(--color-nav-text);
+    font-weight: 500;
+}
+.nav-rightside ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-rightside li{
+    list-style-type: none;
+}
+.special{
+    display: flex;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 1rem 1.5rem;
+    align-items: center;
+    gap: 1.25rem;
+}
+.nav-rightside a{
+    text-decoration: none;
+}
+
+/* Nav Style Ends */
+
+
+/* ------------------- */
+/* ------------------- */
+/* --Responsive Style- */
+/* ------------------- */
+/* ------------------- */
+
+/* ----For Phone---- */
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+    }
+    .nav-rightside ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+}
