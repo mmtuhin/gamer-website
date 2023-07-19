@@ -20,6 +20,12 @@ body{
     padding: 1.25rem 2.5rem;
     border: none;
 }
+.color-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 /* Shared Styles End */
@@ -142,6 +148,98 @@ nav{
     object-position: bottom;
 }
 
+/* Section two grid style start */
+.section-two{
+    text-align: center;
+}
+.section-two-card-container{
+    text-align: left;
+    padding: 120px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+}
+.card img{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+/* section three starts */
+.section-three-part-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.section-three-left-container{
+    padding-right:8rem;
+    width: 500px;
+}
+.section-three-left-container h3{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.section-three-left-container p{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: right;
+}
+.section-three-left-container span{
+    display: block;
+    text-align: right;
+}
+
+.section-three-right-container{
+    position: relative;
+}
+.part-one-parent-img{
+    width: 80%;
+}
+.part-one-child-img{
+    width: 40%;
+    position: absolute;
+    right: 500px;
+    top: 300px;   
+}
+/* Section three part 2 */
+.section-three-part-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+.section-three-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.section-three-right-container2{
+    padding-right:3rem;
+    width: 430px;
+}
+.section-three-left-container2{
+    position: relative;
+}
+.part-two-parent-img{
+    width: 70%;
+    padding-left: 8rem;
+}
+.part-two-child-img{
+    position: absolute;
+    width: 40%;
+    left: 500px;
+    top: 300px;
+}
+.section-three-right-container2 p{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
 /* ------------------- */
 /* ------------------- */
 /* --Responsive Style- */
@@ -152,9 +250,7 @@ nav{
 @media screen and (max-width:576px) {
     nav  {
         flex-direction: column;
-    }
-    
-    
+    } 
     .nav-rightside ul {
         flex-direction: column;
         padding-left: 0;
