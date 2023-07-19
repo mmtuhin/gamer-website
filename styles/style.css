@@ -217,7 +217,7 @@ nav{
     font-weight: 700;
 }
 .section-three-right-container2{
-    padding-right:3rem;
+    padding-right:3.5rem;
     width: 430px;
 }
 .section-three-left-container2{
@@ -229,7 +229,7 @@ nav{
 }
 .part-two-child-img{
     position: absolute;
-    width: 40%;
+    width: 32%;
     left: 500px;
     top: 300px;
 }
@@ -237,6 +237,51 @@ nav{
     color: #534C64;
     font-size: 1.1rem;
     font-weight: 400;
+}
+
+/* Fourth section "Clicable items" Starts*/
+.clickables-container{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 150px auto;
+    padding: 70px;
+    gap: 1.5rem;
+    border: 1px solid black;
+}
+.click-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+background: #FFF;
+width: fit-content;
+}
+.click-items:hover{
+    border: 2px solid var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #FFF;
+    width: fit-content;
+    cursor: pointer;
+}
+.click-items img{
+    width: 60px;
+height: 60px;
+}
+.click-items p{
+    color: #0B0223;
+font-size: 1.25rem;
+font-weight: 600;
+padding: 2px 10px;
+}
+.click-items:hover p{
+    color: var(--color-primary);
 }
 
 
