@@ -73,6 +73,8 @@ nav{
 /* Section One Starts */
 .section-one-container{
     display: flex;
+    gap: 20px;
+    justify-content: center;
     /* max-height: 700px; */
     
 }
@@ -81,10 +83,11 @@ nav{
     background-image: url('../images/Vector\ 2.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding-left: 9rem;
+    padding-bottom: 3rem;
     
-}
-.section-one-info{
-    padding: 3rem 0rem 3rem 8rem;
 }
 .section-one-info-title{
     color: #0B0223;
@@ -127,12 +130,13 @@ nav{
     margin-left: 1rem;
 }
 .section-one-img{
-    width: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center; 
 }
 .section-one-img img{
-    /* padding-left: 40px; */
-    
-    width: 600PX;
+    width: 80%;
     height: 100%;
     object-fit: contain;
     object-position: bottom;
@@ -146,11 +150,40 @@ nav{
 
 /* ----For Phone---- */
 @media screen and (max-width:576px) {
-    nav{
+    nav  {
         flex-direction: column;
     }
+    
+    
     .nav-rightside ul {
         flex-direction: column;
         padding-left: 0;
+    }
+    .section-one-container{
+        flex-direction: column-reverse;
+    }
+    .section-one-img{
+        width: 100%;
+        justify-content: center;
+    }
+    .section-one-info-container{
+        width:fit-content ;
+        margin: 1.25rem;
+        padding: 1.8rem;
+    }
+    .section-one-info-title{
+        font-size: 2rem;
+    }
+    .section-one-info-highlight{
+        font-size: 4rem; 
+    }
+    .section-one-lines{
+        font-size: .9rem;
+        gap: .5rem;
+    }
+    .button-common-shape{
+        border-radius: 2rem;
+        font-size: .75rem;
+        padding: .9rem 1.9rem;
     }
 }
